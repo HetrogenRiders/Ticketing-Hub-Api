@@ -25,19 +25,18 @@ public class AuthenticateUserHandler : IRequestHandler<AuthenticateUserRequest, 
 
     public async Task<AuthenticateUserResponse> Handle(AuthenticateUserRequest request, CancellationToken cancellationToken)
     {
-        var user = await _context.User.FirstOrDefaultAsync(x => x.EmailId == request.Username, cancellationToken);
+        var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == request.Username, cancellationToken);
 
-        var userRoles = await GetUserRoleAsync(user.UserID, cancellationToken);
+        var userRoles = await GetUserRoleAsync(user.Id, cancellationToken);
 
-        var claims = CreateClaims(user.UserID, request.Username, userRoles, $"{user.FirstName} {user.LastName}");
+        var claims = CreateClaims(user.Id, request.Username, userRoles, user.FullName);
         var tokenString = GenerateJwtToken(claims);
         var refreshToken = GenerateRefreshToken();
-        var roles = await GetRoles(user.UserID, cancellationToken);
+        var roles = await GetRoles(user.Id, cancellationToken);
 
         return new AuthenticateUserResponse
         {
-            FirstName = user.FirstName,
-            LastName = user.LastName,
+            FullName = user.FullName,
             Token = tokenString,
             Expiration = DateTime.UtcNow.AddMinutes(Convert.ToInt32(_configuration["jwt:ExpirationMinutes"])),
             RefreshToken = refreshToken,

@@ -32,40 +32,40 @@ namespace TicketingHub.Api.Filters
                 return;
             }
 
-            if (context.HttpContext.User.HasClaim(c => c.Type == "ModulePermission"))
-            {
-                var permissions = JsonConvert.DeserializeObject<List<UserRoleClaims>>(context.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "ModulePermission").Value);
+            //if (context.HttpContext.User.HasClaim(c => c.Type == "ModulePermission"))
+            //{
+            //    var permissions = JsonConvert.DeserializeObject<List<UserRoleClaims>>(context.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "ModulePermission").Value);
 
 
-                // Get the controller name from RouteData
-                var controllerName = context.RouteData.Values["controller"]?.ToString();
+            //    // Get the controller name from RouteData
+            //    var controllerName = context.RouteData.Values["controller"]?.ToString();
 
-                if (permissions.Any(x => x.Module == controllerName))
-                {
-                    var permission = permissions.FirstOrDefault(x => x.Module == controllerName);
+            //    if (permissions.Any(x => x.Module == controllerName))
+            //    {
+            //        var permission = permissions.FirstOrDefault(x => x.Module == controllerName);
 
-                    if (permission != null && CheckIfPropertyIsTrue(permission.Permission, Permission))
-                    {
-                        return;
-                    }
-                }
-            }
+            //        if (permission != null && CheckIfPropertyIsTrue(permission.Permission, Permission))
+            //        {
+            //            return;
+            //        }
+            //    }
+            //}
             context.Result = new ForbidResult();
         }
 
-        protected static bool CheckIfPropertyIsTrue(Permission model, string propertyName)
-        {
-            // Get the property information
-            PropertyInfo propertyInfo = model.GetType().GetProperty(propertyName);
+        //protected static bool CheckIfPropertyIsTrue(Permission model, string propertyName)
+        //{
+        //    // Get the property information
+        //    PropertyInfo propertyInfo = model.GetType().GetProperty(propertyName);
 
-            if (propertyInfo != null)
-            {
-                // Get the value of the property
-                bool propertyValue = (bool)propertyInfo.GetValue(model);
-                return propertyValue;
-            }
+        //    if (propertyInfo != null)
+        //    {
+        //        // Get the value of the property
+        //        bool propertyValue = (bool)propertyInfo.GetValue(model);
+        //        return propertyValue;
+        //    }
 
-            return false;
-        }
+        //    return false;
+        //}
     }
 }

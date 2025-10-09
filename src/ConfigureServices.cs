@@ -4,7 +4,6 @@ using TicketingHub.Api.Common.Interfaces;
 using TicketingHub.Api.Extensions;
 using TicketingHub.Api.Infrastructure.Services;
 using MediatR;
-using TicketingHub.Api.Features.ResetPassword;
 
 namespace TicketingHub.Api;
 public static class ConfigureServices

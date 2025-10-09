@@ -8,8 +8,10 @@ using Serilog.Events;
 using System.Text;
 using TicketingHub.Api;
 using TicketingHub.Api.Common.Behaviours;
+using TicketingHub.Api.Common.Interfaces;
 using TicketingHub.Api.Filters;
 using TicketingHub.Api.Infrastructure;
+using TicketingHub.Api.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 var conn = builder.Configuration.GetConnectionString("Database");
@@ -27,9 +29,11 @@ else
 
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(UnhandledExceptionBehaviour<,>));
 builder.Services.AddService();
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
 // Register the DbSeeder class in DI container
-builder.Services.AddTransient<DbSeeder>();
+//builder.Services.AddTransient<DbSeeder>();
 
 // Add services to the container.
 builder.Services.AddControllers(options =>
@@ -130,8 +134,8 @@ if (app.Environment.IsDevelopment())
     using (var scope = app.Services.CreateScope())
     {
         var dbContext = scope.ServiceProvider.GetRequiredService<DBContext>();
-        var dbSeeder = scope.ServiceProvider.GetRequiredService<DbSeeder>();
-        await dbSeeder.SeedAsync();  // Call the SeedAsync method
+        //var dbSeeder = scope.ServiceProvider.GetRequiredService<DbSeeder>();
+        //await dbSeeder.SeedAsync();  // Call the SeedAsync method
     }
 }
 

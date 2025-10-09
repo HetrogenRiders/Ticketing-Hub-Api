@@ -8,15 +8,15 @@ namespace TicketingHub.Api.Controllers;
 [AllowAnonymous]
 public class AuthenticateUserController : ApiControllerBase
 {
-    [HttpPost(Name = "LoginUser")]
-    public async Task<ActionResult<AuthenticateUserResponse>> LoginAsync(AuthenticateUserRequest request)
-    {
-        return await Mediator.Send(request);
-    }
+    //[HttpPost(Name = "LoginUser")]
+    //public async Task<ActionResult<AuthenticateUserResponse>> LoginAsync(AuthenticateUserRequest request)
+    //{
+    //    return await Mediator.Send(request);
+    //}
 
-    [HttpPost("refresh-token")]
-    public async Task<ActionResult<RefreshTokenResponse>> RefreshTokenAsync(RefreshTokenRequest request)
-    {
-        return await Mediator.Send(request);
-    }
+    //[HttpPost("refresh-token")]
+    //public async Task<ActionResult<RefreshTokenResponse>> RefreshTokenAsync(RefreshTokenRequest request)
+    //{
+    //    return await Mediator.Send(request);
+    //}
 }

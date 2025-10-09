@@ -42,7 +42,7 @@ internal class GetUserModulesByUserIDHandlerTests
             new UserRole { UserID = userId, RoleID = roles[1].Id }, // User Role
         };
 
-        _fixture.Context.UserRoles.AddRange(userRoles);
+        _fixture.Context.Roles.AddRange(userRoles);
 
         // Seed Modules
         var modules = new[]
