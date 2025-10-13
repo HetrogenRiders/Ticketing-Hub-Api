@@ -82,4 +82,10 @@
       <LastGenOutput>SharedResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Admin\Configuration\CategoryManagement\GetCategoryById\" />
+    <Folder Include="Features\Admin\Configuration\CategoryManagement\GetAllCategories\" />
+    <Folder Include="Features\Admin\Configuration\CategoryManagement\DeleteCategory\" />
+    <Folder Include="Features\Admin\Configuration\CategoryManagement\UpdateCategory\" />
+  </ItemGroup>
 </Project>

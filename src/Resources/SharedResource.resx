@@ -58,7 +58,7 @@
 			: using a System.ComponentModel.TypeConverter
 			: and then encoded with base64 encoding.
 	-->
-	
+
 	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
 		<xsd:element name="root" msdata:IsDataSet="true">
 			<xsd:complexType>
@@ -111,5 +111,184 @@
 	<data name="IdTokenRequired">
 		<value>ID Token is required from the SSO provider.</value>
 	</data>
+
+	<!-- Role Management Messages -->
+	<data name="Role name is required." xml:space="preserve">
+    <value>Role name is required.</value>
+    <comment>Displayed when RoleName is missing.</comment>
+  </data>
+
+	<data name="Role name cannot exceed 100 characters." xml:space="preserve">
+    <value>Role name cannot exceed 100 characters.</value>
+    <comment>Displayed when RoleName length exceeds limit.</comment>
+  </data>
+
+	<data name="Role ID is required." xml:space="preserve">
+    <value>Role ID is required.</value>
+    <comment>Displayed when no RoleId provided for update/delete operations.</comment>
+  </data>
+
+	<data name="Role name already exists." xml:space="preserve">
+    <value>Role name already exists.</value>
+    <comment>Validation message for duplicate role name.</comment>
+  </data>
+
+	<data name="Another role with this name already exists." xml:space="preserve">
+    <value>Another role with this name already exists.</value>
+    <comment>Displayed when updating a role to an already existing name.</comment>
+  </data>
+
+	<data name="Role created successfully." xml:space="preserve">
+    <value>Role created successfully.</value>
+    <comment>Displayed when a new role is created.</comment>
+  </data>
+
+	<data name="Role updated successfully." xml:space="preserve">
+    <value>Role updated successfully.</value>
+    <comment>Displayed when a role is updated successfully.</comment>
+  </data>
+
+	<data name="Role deleted successfully." xml:space="preserve">
+    <value>Role deleted successfully.</value>
+    <comment>Displayed when a role is deleted successfully.</comment>
+  </data>
+
+	<data name="Role not found." xml:space="preserve">
+    <value>Role not found.</value>
+    <comment>Displayed when role does not exist in database.</comment>
+  </data>
+
+	<!-- Shared Common Messages -->
+	<data name="An unexpected error occurred." xml:space="preserve">
+    <value>An unexpected error occurred.</value>
+    <comment>Generic fallback error message.</comment>
+  </data>
+
+	<data name="Invalid request." xml:space="preserve">
+    <value>Invalid request.</value>
+    <comment>Displayed when input model validation fails.</comment>
+  </data>
+
+	<data name="Department name is required." xml:space="preserve">
+  <value>Department name is required.</value>
+</data>
+
+	<data name="Department name cannot exceed 100 characters." xml:space="preserve">
+  <value>Department name cannot exceed 100 characters.</value>
+</data>
+
+	<data name="Department ID is required." xml:space="preserve">
+  <value>Department ID is required.</value>
+</data>
+
+	<data name="Department name already exists." xml:space="preserve">
+  <value>Department name already exists.</value>
+</data>
+
+	<data name="Another department with this name already exists." xml:space="preserve">
+  <value>Another department with this name already exists.</value>
+</data>
+
+	<data name="Department created successfully." xml:space="preserve">
+  <value>Department created successfully.</value>
+</data>
+
+	<data name="Department updated successfully." xml:space="preserve">
+  <value>Department updated successfully.</value>
+</data>
+
+	<data name="Department deleted successfully." xml:space="preserve">
+  <value>Department deleted successfully.</value>
+</data>
+
+	<data name="Department not found." xml:space="preserve">
+  <value>Department not found.</value>
+</data>
+
+	<data name="Project ID is required." xml:space="preserve">
+  <value>Project ID is required.</value>
+</data>
+
+	<data name="Project not found." xml:space="preserve">
+  <value>Project not found.</value>
+</data>
+
+	<data name="Project name is required." xml:space="preserve">
+  <value>Project name is required.</value>
+</data>
+
+	<data name="Project name cannot exceed 150 characters." xml:space="preserve">
+  <value>Project name cannot exceed 150 characters.</value>
+</data>
+
+	<data name="Project name already exists." xml:space="preserve">
+  <value>Project name already exists.</value>
+</data>
+
+	<data name="Department is required." xml:space="preserve">
+  <value>Department is required.</value>
+</data>
+
+	<data name="Manager is required." xml:space="preserve">
+  <value>Manager is required.</value>
+</data>
+
+	<!-- ===== Category Management ===== -->
+	<data name="Category name is required." xml:space="preserve"><value>Category name is required.</value></data>
+	<data name="Category name cannot exceed 100 characters." xml:space="preserve"><value>Category name cannot exceed 100 characters.</value></data>
+	<data name="Description cannot exceed 250 characters." xml:space="preserve"><value>Description cannot exceed 250 characters.</value></data>
+	<data name="Category ID is required." xml:space="preserve"><value>Category ID is required.</value></data>
+	<data name="Category not found." xml:space="preserve"><value>Category not found.</value></data>
+	<data name="Category name already exists." xml:space="preserve"><value>Category name already exists.</value></data>
+	<data name="Another category with this name already exists." xml:space="preserve"><value>Another category with this name already exists.</value></data>
+	<data name="Category created successfully." xml:space="preserve"><value>Category created successfully.</value></data>
+	<data name="Category updated successfully." xml:space="preserve"><value>Category updated successfully.</value></data>
+	<data name="Category deleted successfully." xml:space="preserve"><value>Category deleted successfully.</value></data>
+
+	<!-- ===== SubCategory Management ===== -->
+	<data name="SubCategory name is required." xml:space="preserve"><value>SubCategory name is required.</value></data>
+	<data name="SubCategory name cannot exceed 150 characters." xml:space="preserve"><value>SubCategory name cannot exceed 150 characters.</value></data>
+	<data name="SubCategory ID is required." xml:space="preserve"><value>SubCategory ID is required.</value></data>
+	<data name="SubCategory not found." xml:space="preserve"><value>SubCategory not found.</value></data>
+	<data name="SubCategory created successfully." xml:space="preserve"><value>SubCategory created successfully.</value></data>
+	<data name="SubCategory updated successfully." xml:space="preserve"><value>SubCategory updated successfully.</value></data>
+	<data name="SubCategory deleted successfully." xml:space="preserve"><value>SubCategory deleted successfully.</value></data>
+	<data name="CategoryId is required." xml:space="preserve"><value>Category selection is required for SubCategory.</value></data>
+
+	<!-- ===== Priority Management ===== -->
+	<data name="Priority name is required." xml:space="preserve"><value>Priority name is required.</value></data>
+	<data name="Priority name cannot exceed 150 characters." xml:space="preserve"><value>Priority name cannot exceed 150 characters.</value></data>
+	<data name="Priority ID is required." xml:space="preserve"><value>Priority ID is required.</value></data>
+	<data name="Priority not found." xml:space="preserve"><value>Priority not found.</value></data>
+	<data name="Priority created successfully." xml:space="preserve"><value>Priority created successfully.</value></data>
+	<data name="Priority updated successfully." xml:space="preserve"><value>Priority updated successfully.</value></data>
+	<data name="Priority deleted successfully." xml:space="preserve"><value>Priority deleted successfully.</value></data>
+	<data name="SLAHours must be greater than zero." xml:space="preserve"><value>SLA hours must be greater than zero.</value></data>
+
+	<!-- ===== Status Management ===== -->
+	<data name="Status name is required." xml:space="preserve"><value>Status name is required.</value></data>
+	<data name="Status name cannot exceed 150 characters." xml:space="preserve"><value>Status name cannot exceed 150 characters.</value></data>
+	<data name="Status ID is required." xml:space="preserve"><value>Status ID is required.</value></data>
+	<data name="Status not found." xml:space="preserve"><value>Status not found.</value></data>
+	<data name="Status created successfully." xml:space="preserve"><value>Status created successfully.</value></data>
+	<data name="Status updated successfully." xml:space="preserve"><value>Status updated successfully.</value></data>
+	<data name="Status deleted successfully." xml:space="preserve"><value>Status deleted successfully.</value></data>
+	<data name="SortOrder must be greater than zero." xml:space="preserve"><value>SortOrder must be greater than zero.</value></data>
+
+	<!-- ===== SLA Management ===== -->
+	<data name="SLA name is required." xml:space="preserve"><value>SLA name is required.</value></data>
+	<data name="SLA name cannot exceed 150 characters." xml:space="preserve"><value>SLA name cannot exceed 150 characters.</value></data>
+	<data name="SLA ID is required." xml:space="preserve"><value>SLA ID is required.</value></data>
+	<data name="SLA not found." xml:space="preserve"><value>SLA not found.</value></data>
+	<data name="SLA created successfully." xml:space="preserve"><value>SLA created successfully.</value></data>
+	<data name="SLA updated successfully." xml:space="preserve"><value>SLA updated successfully.</value></data>
+	<data name="SLA deleted successfully." xml:space="preserve"><value>SLA deleted successfully.</value></data>
+	<data name="ResponseTimeInHours must be greater than zero." xml:space="preserve"><value>Response time must be greater than zero.</value></data>
+	<data name="ResolutionTimeInHours must be greater than zero." xml:space="preserve"><value>Resolution time must be greater than zero.</value></data>
+
+	<!-- ===== Common Messages ===== -->
+	<data name="Invalid request." xml:space="preserve"><value>Invalid request.</value></data>
+	<data name="An unexpected error occurred." xml:space="preserve"><value>An unexpected error occurred.</value></data>
+	<data name="Operation completed successfully." xml:space="preserve"><value>Operation completed successfully.</value></data>
 
 </root>

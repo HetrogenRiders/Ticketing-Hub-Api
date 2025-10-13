@@ -61,6 +61,213 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An unexpected error occurred..
+        /// </summary>
+        public static string An_unexpected_error_occurred_ {
+            get {
+                return ResourceManager.GetString("An unexpected error occurred.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Another category with this name already exists..
+        /// </summary>
+        public static string Another_category_with_this_name_already_exists_ {
+            get {
+                return ResourceManager.GetString("Another category with this name already exists.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Another department with this name already exists..
+        /// </summary>
+        public static string Another_department_with_this_name_already_exists_ {
+            get {
+                return ResourceManager.GetString("Another department with this name already exists.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Another role with this name already exists..
+        /// </summary>
+        public static string Another_role_with_this_name_already_exists_ {
+            get {
+                return ResourceManager.GetString("Another role with this name already exists.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category created successfully..
+        /// </summary>
+        public static string Category_created_successfully_ {
+            get {
+                return ResourceManager.GetString("Category created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category deleted successfully..
+        /// </summary>
+        public static string Category_deleted_successfully_ {
+            get {
+                return ResourceManager.GetString("Category deleted successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category ID is required..
+        /// </summary>
+        public static string Category_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("Category ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category name already exists..
+        /// </summary>
+        public static string Category_name_already_exists_ {
+            get {
+                return ResourceManager.GetString("Category name already exists.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category name cannot exceed 100 characters..
+        /// </summary>
+        public static string Category_name_cannot_exceed_100_characters_ {
+            get {
+                return ResourceManager.GetString("Category name cannot exceed 100 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category name is required..
+        /// </summary>
+        public static string Category_name_is_required_ {
+            get {
+                return ResourceManager.GetString("Category name is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category not found..
+        /// </summary>
+        public static string Category_not_found_ {
+            get {
+                return ResourceManager.GetString("Category not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category updated successfully..
+        /// </summary>
+        public static string Category_updated_successfully_ {
+            get {
+                return ResourceManager.GetString("Category updated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category selection is required for SubCategory..
+        /// </summary>
+        public static string CategoryId_is_required_ {
+            get {
+                return ResourceManager.GetString("CategoryId is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department created successfully..
+        /// </summary>
+        public static string Department_created_successfully_ {
+            get {
+                return ResourceManager.GetString("Department created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department deleted successfully..
+        /// </summary>
+        public static string Department_deleted_successfully_ {
+            get {
+                return ResourceManager.GetString("Department deleted successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department ID is required..
+        /// </summary>
+        public static string Department_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("Department ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department is required..
+        /// </summary>
+        public static string Department_is_required_ {
+            get {
+                return ResourceManager.GetString("Department is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department name already exists..
+        /// </summary>
+        public static string Department_name_already_exists_ {
+            get {
+                return ResourceManager.GetString("Department name already exists.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department name cannot exceed 100 characters..
+        /// </summary>
+        public static string Department_name_cannot_exceed_100_characters_ {
+            get {
+                return ResourceManager.GetString("Department name cannot exceed 100 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department name is required..
+        /// </summary>
+        public static string Department_name_is_required_ {
+            get {
+                return ResourceManager.GetString("Department name is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department not found..
+        /// </summary>
+        public static string Department_not_found_ {
+            get {
+                return ResourceManager.GetString("Department not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department updated successfully..
+        /// </summary>
+        public static string Department_updated_successfully_ {
+            get {
+                return ResourceManager.GetString("Department updated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description cannot exceed 250 characters..
+        /// </summary>
+        public static string Description_cannot_exceed_250_characters_ {
+            get {
+                return ResourceManager.GetString("Description cannot exceed 250 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ID Token is required from the SSO provider..
         /// </summary>
         public static string IdTokenRequired {
@@ -70,11 +277,443 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid request..
+        /// </summary>
+        public static string Invalid_request_ {
+            get {
+                return ResourceManager.GetString("Invalid request.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manager is required..
+        /// </summary>
+        public static string Manager_is_required_ {
+            get {
+                return ResourceManager.GetString("Manager is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operation completed successfully..
+        /// </summary>
+        public static string Operation_completed_successfully_ {
+            get {
+                return ResourceManager.GetString("Operation completed successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Priority created successfully..
+        /// </summary>
+        public static string Priority_created_successfully_ {
+            get {
+                return ResourceManager.GetString("Priority created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Priority deleted successfully..
+        /// </summary>
+        public static string Priority_deleted_successfully_ {
+            get {
+                return ResourceManager.GetString("Priority deleted successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Priority ID is required..
+        /// </summary>
+        public static string Priority_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("Priority ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Priority name cannot exceed 150 characters..
+        /// </summary>
+        public static string Priority_name_cannot_exceed_150_characters_ {
+            get {
+                return ResourceManager.GetString("Priority name cannot exceed 150 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Priority name is required..
+        /// </summary>
+        public static string Priority_name_is_required_ {
+            get {
+                return ResourceManager.GetString("Priority name is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Priority not found..
+        /// </summary>
+        public static string Priority_not_found_ {
+            get {
+                return ResourceManager.GetString("Priority not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Priority updated successfully..
+        /// </summary>
+        public static string Priority_updated_successfully_ {
+            get {
+                return ResourceManager.GetString("Priority updated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Project ID is required..
+        /// </summary>
+        public static string Project_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("Project ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Project name already exists..
+        /// </summary>
+        public static string Project_name_already_exists_ {
+            get {
+                return ResourceManager.GetString("Project name already exists.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Project name cannot exceed 150 characters..
+        /// </summary>
+        public static string Project_name_cannot_exceed_150_characters_ {
+            get {
+                return ResourceManager.GetString("Project name cannot exceed 150 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Project name is required..
+        /// </summary>
+        public static string Project_name_is_required_ {
+            get {
+                return ResourceManager.GetString("Project name is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Project not found..
+        /// </summary>
+        public static string Project_not_found_ {
+            get {
+                return ResourceManager.GetString("Project not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Provider is required..
         /// </summary>
         public static string ProviderRequired {
             get {
                 return ResourceManager.GetString("ProviderRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resolution time must be greater than zero..
+        /// </summary>
+        public static string ResolutionTimeInHours_must_be_greater_than_zero_ {
+            get {
+                return ResourceManager.GetString("ResolutionTimeInHours must be greater than zero.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Response time must be greater than zero..
+        /// </summary>
+        public static string ResponseTimeInHours_must_be_greater_than_zero_ {
+            get {
+                return ResourceManager.GetString("ResponseTimeInHours must be greater than zero.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role created successfully..
+        /// </summary>
+        public static string Role_created_successfully_ {
+            get {
+                return ResourceManager.GetString("Role created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role deleted successfully..
+        /// </summary>
+        public static string Role_deleted_successfully_ {
+            get {
+                return ResourceManager.GetString("Role deleted successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role ID is required..
+        /// </summary>
+        public static string Role_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("Role ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role name already exists..
+        /// </summary>
+        public static string Role_name_already_exists_ {
+            get {
+                return ResourceManager.GetString("Role name already exists.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role name cannot exceed 100 characters..
+        /// </summary>
+        public static string Role_name_cannot_exceed_100_characters_ {
+            get {
+                return ResourceManager.GetString("Role name cannot exceed 100 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role name is required..
+        /// </summary>
+        public static string Role_name_is_required_ {
+            get {
+                return ResourceManager.GetString("Role name is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role not found..
+        /// </summary>
+        public static string Role_not_found_ {
+            get {
+                return ResourceManager.GetString("Role not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role updated successfully..
+        /// </summary>
+        public static string Role_updated_successfully_ {
+            get {
+                return ResourceManager.GetString("Role updated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA created successfully..
+        /// </summary>
+        public static string SLA_created_successfully_ {
+            get {
+                return ResourceManager.GetString("SLA created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA deleted successfully..
+        /// </summary>
+        public static string SLA_deleted_successfully_ {
+            get {
+                return ResourceManager.GetString("SLA deleted successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA ID is required..
+        /// </summary>
+        public static string SLA_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("SLA ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA name cannot exceed 150 characters..
+        /// </summary>
+        public static string SLA_name_cannot_exceed_150_characters_ {
+            get {
+                return ResourceManager.GetString("SLA name cannot exceed 150 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA name is required..
+        /// </summary>
+        public static string SLA_name_is_required_ {
+            get {
+                return ResourceManager.GetString("SLA name is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA not found..
+        /// </summary>
+        public static string SLA_not_found_ {
+            get {
+                return ResourceManager.GetString("SLA not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA updated successfully..
+        /// </summary>
+        public static string SLA_updated_successfully_ {
+            get {
+                return ResourceManager.GetString("SLA updated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA hours must be greater than zero..
+        /// </summary>
+        public static string SLAHours_must_be_greater_than_zero_ {
+            get {
+                return ResourceManager.GetString("SLAHours must be greater than zero.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SortOrder must be greater than zero..
+        /// </summary>
+        public static string SortOrder_must_be_greater_than_zero_ {
+            get {
+                return ResourceManager.GetString("SortOrder must be greater than zero.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status created successfully..
+        /// </summary>
+        public static string Status_created_successfully_ {
+            get {
+                return ResourceManager.GetString("Status created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status deleted successfully..
+        /// </summary>
+        public static string Status_deleted_successfully_ {
+            get {
+                return ResourceManager.GetString("Status deleted successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status ID is required..
+        /// </summary>
+        public static string Status_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("Status ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status name cannot exceed 150 characters..
+        /// </summary>
+        public static string Status_name_cannot_exceed_150_characters_ {
+            get {
+                return ResourceManager.GetString("Status name cannot exceed 150 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status name is required..
+        /// </summary>
+        public static string Status_name_is_required_ {
+            get {
+                return ResourceManager.GetString("Status name is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status not found..
+        /// </summary>
+        public static string Status_not_found_ {
+            get {
+                return ResourceManager.GetString("Status not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status updated successfully..
+        /// </summary>
+        public static string Status_updated_successfully_ {
+            get {
+                return ResourceManager.GetString("Status updated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubCategory created successfully..
+        /// </summary>
+        public static string SubCategory_created_successfully_ {
+            get {
+                return ResourceManager.GetString("SubCategory created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubCategory deleted successfully..
+        /// </summary>
+        public static string SubCategory_deleted_successfully_ {
+            get {
+                return ResourceManager.GetString("SubCategory deleted successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubCategory ID is required..
+        /// </summary>
+        public static string SubCategory_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("SubCategory ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubCategory name cannot exceed 150 characters..
+        /// </summary>
+        public static string SubCategory_name_cannot_exceed_150_characters_ {
+            get {
+                return ResourceManager.GetString("SubCategory name cannot exceed 150 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubCategory name is required..
+        /// </summary>
+        public static string SubCategory_name_is_required_ {
+            get {
+                return ResourceManager.GetString("SubCategory name is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubCategory not found..
+        /// </summary>
+        public static string SubCategory_not_found_ {
+            get {
+                return ResourceManager.GetString("SubCategory not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubCategory updated successfully..
+        /// </summary>
+        public static string SubCategory_updated_successfully_ {
+            get {
+                return ResourceManager.GetString("SubCategory updated successfully.", resourceCulture);
             }
         }
         

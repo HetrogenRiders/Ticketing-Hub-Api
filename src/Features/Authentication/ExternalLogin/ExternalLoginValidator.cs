@@ -1,7 +1,7 @@
 ﻿
 using FluentValidation;
-using Microsoft.Extensions.Localization;
-using TicketingHub.Api.Resources;
+using Microsoft.Extensions.Localization;using TicketingHub.Api.Resources;
+
 
 namespace TicketingHub.Api.Features.Authentication.ExternalLogin
 {
