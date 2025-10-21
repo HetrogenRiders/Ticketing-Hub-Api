@@ -1,44 +1,50 @@
-using System.Net;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.Mail;
+using System.Net;
+using System.Threading.Tasks;
 using TicketingHub.Api.Common.Interfaces;
 
-public class EmailService : IEmailService
+namespace TicketingHub.Api.Infrastructure.Services
 {
-    private readonly IConfiguration _configuration;
-
-    public EmailService(IConfiguration configuration)
+    public class EmailService : IEmailService
     {
-        _configuration = configuration;
-    }
+        private readonly ILogger<EmailService> _logger;
+        private readonly IConfiguration _config;
 
-    public async Task SendAsync(string to, string subject, string body)
-    {
-        var smtpHost = _configuration["MailSettings:Host"];
-        var smtpPort = int.Parse(_configuration["MailSettings:Port"]);
-        var smtpUser = _configuration["MailSettings:UserName"];
-        var smtpPass = _configuration["MailSettings:Password"];
-        var fromEmail = _configuration["MailSettings:FromAddress"];
-
-        if (string.IsNullOrEmpty(smtpHost) || string.IsNullOrEmpty(smtpUser) || string.IsNullOrEmpty(smtpPass))
+        public EmailService(ILogger<EmailService> logger, IConfiguration config)
         {
-            throw new Exception("Email configuration is missing or invalid.");
+            _logger = logger;
+            _config = config;
         }
 
-        using (var client = new SmtpClient(smtpHost, smtpPort))
+        public async Task SendEmailAsync(IEnumerable<string> recipients, string subject, string body)
         {
-            client.Credentials = new NetworkCredential(smtpUser, smtpPass);
-            client.EnableSsl = true;
+            var smtpHost = _config["Email:SmtpHost"];
+            var smtpUser = _config["Email:Username"];
+            var smtpPass = _config["Email:Password"];
+            var smtpPort = int.Parse(_config["Email:Port"] ?? "587");
+            var sender = _config["Email:From"];
 
-            var mailMessage = new MailMessage
+            using var smtpClient = new SmtpClient(smtpHost)
             {
-                From = new MailAddress(fromEmail),
-                Subject = subject,
-                Body = body,
-                IsBodyHtml = true
+                Port = smtpPort,
+                Credentials = new NetworkCredential(smtpUser, smtpPass),
+                EnableSsl = true
             };
-            mailMessage.To.Add(to);
 
-            await client.SendMailAsync(mailMessage);
+            foreach (var email in recipients.Where(e => !string.IsNullOrWhiteSpace(e)))
+            {
+                var mail = new MailMessage(sender, email, subject, body)
+                {
+                    IsBodyHtml = true
+                };
+
+                await smtpClient.SendMailAsync(mail);
+                _logger.LogInformation("Email sent to {Email}.", email);
+            }
         }
     }
 }

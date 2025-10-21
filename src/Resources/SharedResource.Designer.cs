@@ -61,6 +61,15 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Access denied. You do not have sufficient permissions..
+        /// </summary>
+        public static string Access_denied_ {
+            get {
+                return ResourceManager.GetString("Access denied.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An unexpected error occurred..
         /// </summary>
         public static string An_unexpected_error_occurred_ {
@@ -97,6 +106,24 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Attachment download failed..
+        /// </summary>
+        public static string Attachment_download_failed_ {
+            get {
+                return ResourceManager.GetString("Attachment download failed.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attachment uploaded successfully..
+        /// </summary>
+        public static string Attachment_uploaded_successfully_ {
+            get {
+                return ResourceManager.GetString("Attachment uploaded successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Category created successfully..
         /// </summary>
         public static string Category_created_successfully_ {
@@ -120,6 +147,15 @@ namespace TicketingHub.Api.Resources {
         public static string Category_ID_is_required_ {
             get {
                 return ResourceManager.GetString("Category ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category is required..
+        /// </summary>
+        public static string Category_is_required_ {
+            get {
+                return ResourceManager.GetString("Category is required.", resourceCulture);
             }
         }
         
@@ -174,6 +210,15 @@ namespace TicketingHub.Api.Resources {
         public static string CategoryId_is_required_ {
             get {
                 return ResourceManager.GetString("CategoryId is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dashboard data retrieved successfully..
+        /// </summary>
+        public static string Dashboard_data_retrieved_successfully_ {
+            get {
+                return ResourceManager.GetString("Dashboard data retrieved successfully.", resourceCulture);
             }
         }
         
@@ -268,11 +313,56 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Due date calculated successfully..
+        /// </summary>
+        public static string Due_date_calculated_successfully_ {
+            get {
+                return ResourceManager.GetString("Due date calculated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to send email notification..
+        /// </summary>
+        public static string Email_sending_failed_ {
+            get {
+                return ResourceManager.GetString("Email sending failed.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email sent successfully..
+        /// </summary>
+        public static string Email_sent_successfully_ {
+            get {
+                return ResourceManager.GetString("Email sent successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An unexpected error occurred while creating the ticket. Please try again later..
+        /// </summary>
+        public static string Error_while_creating_ticket_ {
+            get {
+                return ResourceManager.GetString("Error while creating ticket.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ID Token is required from the SSO provider..
         /// </summary>
         public static string IdTokenRequired {
             get {
                 return ResourceManager.GetString("IdTokenRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid credentials. Please check your username or password..
+        /// </summary>
+        public static string Invalid_credentials_ {
+            get {
+                return ResourceManager.GetString("Invalid credentials.", resourceCulture);
             }
         }
         
@@ -291,6 +381,69 @@ namespace TicketingHub.Api.Resources {
         public static string Manager_is_required_ {
             get {
                 return ResourceManager.GetString("Manager is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message cannot be empty..
+        /// </summary>
+        public static string Message_cannot_be_empty_ {
+            get {
+                return ResourceManager.GetString("Message cannot be empty.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message cannot exceed 500 characters..
+        /// </summary>
+        public static string Message_cannot_exceed_500_characters_ {
+            get {
+                return ResourceManager.GetString("Message cannot exceed 500 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No records found..
+        /// </summary>
+        public static string No_records_found_ {
+            get {
+                return ResourceManager.GetString("No records found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notification created successfully..
+        /// </summary>
+        public static string Notification_created_successfully_ {
+            get {
+                return ResourceManager.GetString("Notification created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notification marked as read successfully..
+        /// </summary>
+        public static string Notification_marked_as_read_successfully_ {
+            get {
+                return ResourceManager.GetString("Notification marked as read successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notification not found..
+        /// </summary>
+        public static string Notification_not_found_ {
+            get {
+                return ResourceManager.GetString("Notification not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notification type is required..
+        /// </summary>
+        public static string Notification_type_is_required_ {
+            get {
+                return ResourceManager.GetString("Notification type is required.", resourceCulture);
             }
         }
         
@@ -327,6 +480,15 @@ namespace TicketingHub.Api.Resources {
         public static string Priority_ID_is_required_ {
             get {
                 return ResourceManager.GetString("Priority ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Priority is required..
+        /// </summary>
+        public static string Priority_is_required_ {
+            get {
+                return ResourceManager.GetString("Priority is required.", resourceCulture);
             }
         }
         
@@ -421,6 +583,15 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Recipient ID is required..
+        /// </summary>
+        public static string Recipient_ID_is_required_ {
+            get {
+                return ResourceManager.GetString("Recipient ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Resolution time must be greater than zero..
         /// </summary>
         public static string ResolutionTimeInHours_must_be_greater_than_zero_ {
@@ -511,6 +682,24 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Your session has expired. Please log in again..
+        /// </summary>
+        public static string Session_expired_ {
+            get {
+                return ResourceManager.GetString("Session expired.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA breached for this ticket..
+        /// </summary>
+        public static string SLA_breached_for_this_ticket_ {
+            get {
+                return ResourceManager.GetString("SLA breached for this ticket.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SLA created successfully..
         /// </summary>
         public static string SLA_created_successfully_ {
@@ -534,6 +723,15 @@ namespace TicketingHub.Api.Resources {
         public static string SLA_ID_is_required_ {
             get {
                 return ResourceManager.GetString("SLA ID is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SLA monitoring completed..
+        /// </summary>
+        public static string SLA_monitoring_completed_ {
+            get {
+                return ResourceManager.GetString("SLA monitoring completed.", resourceCulture);
             }
         }
         
@@ -619,6 +817,15 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Status is required..
+        /// </summary>
+        public static string Status_is_required_ {
+            get {
+                return ResourceManager.GetString("Status is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Status name cannot exceed 150 characters..
         /// </summary>
         public static string Status_name_cannot_exceed_150_characters_ {
@@ -651,6 +858,15 @@ namespace TicketingHub.Api.Resources {
         public static string Status_updated_successfully_ {
             get {
                 return ResourceManager.GetString("Status updated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Storage provider not configured properly..
+        /// </summary>
+        public static string Storage_provider_not_configured_properly_ {
+            get {
+                return ResourceManager.GetString("Storage provider not configured properly.", resourceCulture);
             }
         }
         
@@ -700,11 +916,11 @@ namespace TicketingHub.Api.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubCategory not found..
+        ///   Looks up a localized string similar to Subcategory not found..
         /// </summary>
-        public static string SubCategory_not_found_ {
+        public static string Subcategory_not_found_ {
             get {
-                return ResourceManager.GetString("SubCategory not found.", resourceCulture);
+                return ResourceManager.GetString("Subcategory not found.", resourceCulture);
             }
         }
         
@@ -723,6 +939,69 @@ namespace TicketingHub.Api.Resources {
         public static string SubjectRequired {
             get {
                 return ResourceManager.GetString("SubjectRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ticket closed successfully..
+        /// </summary>
+        public static string Ticket_closed_successfully_ {
+            get {
+                return ResourceManager.GetString("Ticket closed successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ticket created successfully..
+        /// </summary>
+        public static string Ticket_created_successfully_ {
+            get {
+                return ResourceManager.GetString("Ticket created successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ticket not found..
+        /// </summary>
+        public static string Ticket_not_found_ {
+            get {
+                return ResourceManager.GetString("Ticket not found.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ticket updated successfully..
+        /// </summary>
+        public static string Ticket_updated_successfully_ {
+            get {
+                return ResourceManager.GetString("Ticket updated successfully.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title cannot exceed 200 characters..
+        /// </summary>
+        public static string Title_cannot_exceed_200_characters_ {
+            get {
+                return ResourceManager.GetString("Title cannot exceed 200 characters.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title is required..
+        /// </summary>
+        public static string Title_is_required_ {
+            get {
+                return ResourceManager.GetString("Title is required.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User not found..
+        /// </summary>
+        public static string User_not_found_ {
+            get {
+                return ResourceManager.GetString("User not found.", resourceCulture);
             }
         }
         

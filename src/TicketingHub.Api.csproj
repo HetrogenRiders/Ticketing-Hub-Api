@@ -87,5 +87,6 @@
     <Folder Include="Features\Admin\Configuration\CategoryManagement\GetAllCategories\" />
     <Folder Include="Features\Admin\Configuration\CategoryManagement\DeleteCategory\" />
     <Folder Include="Features\Admin\Configuration\CategoryManagement\UpdateCategory\" />
+    <Folder Include="Features\Ticketing\TicketManagement\NewFolder\" />
   </ItemGroup>
 </Project>

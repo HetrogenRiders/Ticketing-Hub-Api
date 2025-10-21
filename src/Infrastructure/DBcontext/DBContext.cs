@@ -26,6 +26,7 @@ public class DBContext : DbContext
     public DbSet<TicketComment> TicketComments { get; set; }
     public DbSet<TicketAttachment> TicketAttachments { get; set; }
     public DbSet<TicketHistory> TicketHistories { get; set; }
+    public DbSet<TicketSubscriber> TicketSubscribers { get; set; }
 
     // 🔹 Configuration
     public DbSet<Category> Categories { get; set; }

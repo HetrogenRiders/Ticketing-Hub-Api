@@ -249,7 +249,6 @@
 	<data name="SubCategory name is required." xml:space="preserve"><value>SubCategory name is required.</value></data>
 	<data name="SubCategory name cannot exceed 150 characters." xml:space="preserve"><value>SubCategory name cannot exceed 150 characters.</value></data>
 	<data name="SubCategory ID is required." xml:space="preserve"><value>SubCategory ID is required.</value></data>
-	<data name="SubCategory not found." xml:space="preserve"><value>SubCategory not found.</value></data>
 	<data name="SubCategory created successfully." xml:space="preserve"><value>SubCategory created successfully.</value></data>
 	<data name="SubCategory updated successfully." xml:space="preserve"><value>SubCategory updated successfully.</value></data>
 	<data name="SubCategory deleted successfully." xml:space="preserve"><value>SubCategory deleted successfully.</value></data>
@@ -290,5 +289,163 @@
 	<data name="Invalid request." xml:space="preserve"><value>Invalid request.</value></data>
 	<data name="An unexpected error occurred." xml:space="preserve"><value>An unexpected error occurred.</value></data>
 	<data name="Operation completed successfully." xml:space="preserve"><value>Operation completed successfully.</value></data>
+	<data name="Title is required." xml:space="preserve">
+    <value>Title is required.</value>
+  </data>
+	<data name="Title cannot exceed 200 characters." xml:space="preserve">
+    <value>Title cannot exceed 200 characters.</value>
+  </data>
+	<data name="Department is required." xml:space="preserve">
+    <value>Department is required.</value>
+  </data>
+	<data name="Category is required." xml:space="preserve">
+    <value>Category is required.</value>
+  </data>
+	<data name="Priority is required." xml:space="preserve">
+    <value>Priority is required.</value>
+  </data>
+	<data name="Status is required." xml:space="preserve">
+    <value>Status is required.</value>
+  </data>
+	<data name="Ticket created successfully." xml:space="preserve">
+    <value>Ticket created successfully.</value>
+  </data>
+	<data name="SLA not found." xml:space="preserve">
+    <value>The selected SLA record could not be found.</value>
+  </data>
+	<data name="Error while creating ticket." xml:space="preserve">
+    <value>An unexpected error occurred while creating the ticket. Please try again later.</value>
+  </data>
 
+	<data name="Ticket updated successfully." xml:space="preserve">
+  <value>Ticket updated successfully.</value>
+</data>
+	<data name="Ticket not found." xml:space="preserve">
+  <value>Ticket not found.</value>
+</data>
+
+	<data name="Notification created successfully." xml:space="preserve">
+    <value>Notification created successfully.</value>
+  </data>
+	<data name="Notification not found." xml:space="preserve">
+    <value>Notification not found.</value>
+  </data>
+	<data name="Notification marked as read successfully." xml:space="preserve">
+    <value>Notification marked as read successfully.</value>
+  </data>
+	<data name="Recipient ID is required." xml:space="preserve">
+    <value>Recipient ID is required.</value>
+  </data>
+	<data name="Message cannot be empty." xml:space="preserve">
+    <value>Message cannot be empty.</value>
+  </data>
+	<data name="Message cannot exceed 500 characters." xml:space="preserve">
+    <value>Message cannot exceed 500 characters.</value>
+  </data>
+	<data name="Notification type is required." xml:space="preserve">
+    <value>Notification type is required.</value>
+  </data>
+
+	<!-- ========================================= -->
+	<!-- 🧠 Ticketing and SLA Related -->
+	<!-- ========================================= -->
+	<data name="Ticket created successfully." xml:space="preserve">
+    <value>Ticket created successfully.</value>
+  </data>
+	<data name="Ticket not found." xml:space="preserve">
+    <value>Ticket not found.</value>
+  </data>
+	<data name="Ticket updated successfully." xml:space="preserve">
+    <value>Ticket updated successfully.</value>
+  </data>
+	<data name="Ticket closed successfully." xml:space="preserve">
+    <value>Ticket closed successfully.</value>
+  </data>
+	<data name="SLA breached for this ticket." xml:space="preserve">
+    <value>SLA breached for this ticket.</value>
+  </data>
+	<data name="SLA monitoring completed." xml:space="preserve">
+    <value>SLA monitoring completed.</value>
+  </data>
+	<data name="Due date calculated successfully." xml:space="preserve">
+    <value>Due date calculated successfully.</value>
+  </data>
+
+	<!-- ========================================= -->
+	<!-- 👥 User and Role Management -->
+	<!-- ========================================= -->
+	<data name="User not found." xml:space="preserve">
+    <value>User not found.</value>
+  </data>
+	<data name="Role not found." xml:space="preserve">
+    <value>Role not found.</value>
+  </data>
+	<data name="Department not found." xml:space="preserve">
+    <value>Department not found.</value>
+  </data>
+
+	<!-- ========================================= -->
+	<!-- ⚙️ Configuration Entities -->
+	<!-- ========================================= -->
+	<data name="Category not found." xml:space="preserve">
+    <value>Category not found.</value>
+  </data>
+	<data name="Subcategory not found." xml:space="preserve">
+    <value>Subcategory not found.</value>
+  </data>
+	<data name="Priority not found." xml:space="preserve">
+    <value>Priority not found.</value>
+  </data>
+	<data name="Status not found." xml:space="preserve">
+    <value>Status not found.</value>
+  </data>
+	<data name="SLA not found." xml:space="preserve">
+    <value>SLA not found.</value>
+  </data>
+
+	<!-- ========================================= -->
+	<!-- 💾 File & Attachment Related -->
+	<!-- ========================================= -->
+	<data name="Attachment uploaded successfully." xml:space="preserve">
+    <value>Attachment uploaded successfully.</value>
+  </data>
+	<data name="Attachment download failed." xml:space="preserve">
+    <value>Attachment download failed.</value>
+  </data>
+	<data name="Storage provider not configured properly." xml:space="preserve">
+    <value>Storage provider not configured properly.</value>
+  </data>
+
+	<!-- ========================================= -->
+	<!-- 🔐 Authentication & Security -->
+	<!-- ========================================= -->
+	<data name="Invalid credentials." xml:space="preserve">
+    <value>Invalid credentials. Please check your username or password.</value>
+  </data>
+	<data name="Access denied." xml:space="preserve">
+    <value>Access denied. You do not have sufficient permissions.</value>
+  </data>
+	<data name="Session expired." xml:space="preserve">
+    <value>Your session has expired. Please log in again.</value>
+  </data>
+
+	<!-- ========================================= -->
+	<!-- 📧 Email & Communication -->
+	<!-- ========================================= -->
+	<data name="Email sent successfully." xml:space="preserve">
+    <value>Email sent successfully.</value>
+  </data>
+	<data name="Email sending failed." xml:space="preserve">
+    <value>Failed to send email notification.</value>
+  </data>
+
+	<!-- ========================================= -->
+	<!-- 📊 Dashboard / Reporting -->
+	<!-- ========================================= -->
+	<data name="Dashboard data retrieved successfully." xml:space="preserve">
+    <value>Dashboard data retrieved successfully.</value>
+  </data>
+	<data name="No records found." xml:space="preserve">
+    <value>No records found.</value>
+  </data>
 </root>

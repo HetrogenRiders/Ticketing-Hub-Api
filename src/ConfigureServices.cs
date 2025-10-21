@@ -25,6 +25,8 @@ public static class ConfigureServices
 
         services.AddTransient<IEmailService, EmailService>();
         services.AddSingleton<ICurrentUserService, CurrentUserService>();
+        services.AddScoped<ISlaCalculationService, SlaCalculationService>();
+        services.AddScoped<ISlaMonitoringService, SlaMonitoringService>();
         return services;
     }
 }

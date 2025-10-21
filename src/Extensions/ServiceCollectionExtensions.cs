@@ -1,3 +1,6 @@
+using TicketingHub.Api.Common.Interfaces;
+using TicketingHub.Api.Infrastructure.Services;
+
 namespace TicketingHub.Api.Extensions
 {
     public static class ServiceCollectionExtensions
@@ -13,6 +16,19 @@ namespace TicketingHub.Api.Extensions
                         .AllowCredentials()
                         .SetIsOriginAllowed((host) => true);
                 }));
+
+            // SLA services
+            services.AddScoped<ISlaCalculationService, SlaCalculationService>();
+            services.AddScoped<ISlaMonitoringService, SlaMonitoringService>();
+
+            // Notification & subscriptions
+            services.AddScoped<INotificationPublisher, NotificationPublisher>();
+            services.AddScoped<ITicketSubscriptionService, TicketSubscriptionService>(); // implement separately
+
+
+            services.AddScoped<ITicketAssignmentService, TicketAssignmentService>();
+            services.AddScoped<IEmailService, EmailService>();
+            services.AddSignalR();
 
             return services;
         }
