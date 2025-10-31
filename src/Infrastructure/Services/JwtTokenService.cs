@@ -15,7 +15,7 @@ namespace TicketingHub.Api.Infrastructure.Services
             _configuration = configuration;
         }
 
-        public string GenerateToken(Guid userId, string email, string role)
+        public string GenerateToken(Guid userId, string email, string role, IEnumerable<string>? permissions = null)
         {
             // Read settings from appsettings.json
             var jwtKey = _configuration["Jwt:Key"];

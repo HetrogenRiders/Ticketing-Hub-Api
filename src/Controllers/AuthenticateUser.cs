@@ -1,4 +1,6 @@
+﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using TicketingHub.Api.Common;
 using TicketingHub.Api.Features.Authentication;
@@ -8,15 +10,30 @@ namespace TicketingHub.Api.Controllers;
 [AllowAnonymous]
 public class AuthenticateUserController : ApiControllerBase
 {
-    //[HttpPost(Name = "LoginUser")]
-    //public async Task<ActionResult<AuthenticateUserResponse>> LoginAsync(AuthenticateUserRequest request)
-    //{
-    //    return await Mediator.Send(request);
-    //}
+    [AllowAnonymous]
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AuthController : ControllerBase
+    {
+        private readonly IMediator _mediator;
 
-    //[HttpPost("refresh-token")]
-    //public async Task<ActionResult<RefreshTokenResponse>> RefreshTokenAsync(RefreshTokenRequest request)
-    //{
-    //    return await Mediator.Send(request);
-    //}
+        public AuthController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequest model)
+        {
+            var request = new LoginRequest
+            {
+                Email = model.Email,
+                Password = model.Password
+            };
+
+            var response = await _mediator.Send(request);
+
+            return Ok(response);
+        }
+    }
 }

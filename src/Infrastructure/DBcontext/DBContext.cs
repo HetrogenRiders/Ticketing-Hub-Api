@@ -44,6 +44,9 @@ public class DBContext : DbContext
     public DbSet<AuditLog> AuditLogs { get; set; }
     public DbSet<SystemSetting> SystemSettings { get; set; }
 
+    public DbSet<PermissionType> PermissionTypes { get; set; }
+    public DbSet<RolePermission> RolePermissions { get; set; }
+
 
     //public DbSet<User> User { get; set; }
     //public DbSet<Role> Roles { get; set; }
