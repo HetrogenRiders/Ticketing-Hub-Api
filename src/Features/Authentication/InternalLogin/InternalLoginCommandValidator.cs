@@ -4,9 +4,9 @@ using TicketingHub.Api.Resources;
 
 namespace TicketingHub.Api.Features.Authentication.InternalLogin
 {
-    public class LoginCommandValidator : AbstractValidator<LoginRequest>
+    public class InternalLoginCommandValidator : AbstractValidator<InternalLoginRequest>
     {
-        public LoginCommandValidator(IStringLocalizer<SharedResource> localizer)
+        public InternalLoginCommandValidator(IStringLocalizer<SharedResource> localizer)
         {
             RuleFor(x => x.Email)
                 .NotEmpty().WithMessage(localizer["EmailRequired"])

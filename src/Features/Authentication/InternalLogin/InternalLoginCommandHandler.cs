@@ -2,25 +2,26 @@
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
+using TicketingHub.Api.Common.Interfaces;
 using TicketingHub.Api.Infrastructure;
 using TicketingHub.Api.Infrastructure.Services;
 
 namespace TicketingHub.Api.Features.Authentication.InternalLogin
 {
-    public class LoginCommandHandler : IRequestHandler<LoginRequest, LoginResponse>
+    public class InternalLoginCommandHandler : IRequestHandler<InternalLoginRequest, InternalLoginResponse>
     {
         private readonly DBContext _db;
-        private readonly JwtTokenService _jwt;
+        private readonly IJwtTokenService _jwt;
         private readonly IConfiguration _config;
 
-        public LoginCommandHandler(DBContext db, JwtTokenService jwt, IConfiguration config)
+        public InternalLoginCommandHandler(DBContext db, IJwtTokenService jwt, IConfiguration config)
         {
             _db = db;
             _jwt = jwt;
             _config = config;
         }
 
-        public async Task<LoginResponse> Handle(LoginRequest request, CancellationToken cancellationToken)
+        public async Task<InternalLoginResponse> Handle(InternalLoginRequest request, CancellationToken cancellationToken)
         {
             var user = await _db.Users
                 .Include(u => u.Role)
@@ -42,7 +43,7 @@ namespace TicketingHub.Api.Features.Authentication.InternalLogin
 
             var token = _jwt.GenerateToken(user.Id, user.Email, roleName, permissions);
 
-            return new LoginResponse
+            return new InternalLoginResponse
             {
                 Token = token,
                 FullName = user.FullName,
